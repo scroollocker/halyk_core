@@ -17,6 +17,7 @@ abstract class AppStyles {
   TextStyle get bold20;
   TextStyle get bold24;
   TextStyle get extra24;
+  TextStyle get extra26;
   TextStyle get extra28;
   TextStyle get extra20;
   TextStyle get extra14;
@@ -98,6 +99,10 @@ class AndroidStyle implements AppStyles {
   @override
   TextStyle get extra28 =>
       const TextStyle(fontSize: 28, fontWeight: FontWeight.w800);
+  
+  @override
+  TextStyle get extra26 =>
+      const TextStyle(fontSize: 26, fontWeight: FontWeight.w800);
 }
 
 @lazySingleton
@@ -174,4 +179,7 @@ class IosStyle implements AppStyles {
   @override
   TextStyle get extra28 =>
       const TextStyle(fontSize: 28, fontWeight: FontWeight.w800);
+  @override
+  TextStyle get extra26 =>
+      const TextStyle(fontSize: 26, fontWeight: FontWeight.w800);
 }
